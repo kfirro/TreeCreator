@@ -18,7 +18,7 @@ namespace TreeCreatorApp
             string rollbackDirectoryDestinationPath = args[2];
             bool IsRollbackSuccess = true;
             FileSystemManager fsm = new FileSystemManager(app);
-            app.AppendToConsole(string.Format("DEBUG - Deployment package contains {0} files, Production folder contains {1} files", fsm.GetFilesCountByDirectory(packageDirectoryTreePath), fsm.GetFilesCountByDirectory(rollbackDirectoryTreePath)));
+            //app.AppendToConsole(string.Format("DEBUG - Deployment package contains {0} files, Production folder contains {1} files", fsm.GetFilesCountByDirectory(packageDirectoryTreePath), fsm.GetFilesCountByDirectory(rollbackDirectoryTreePath)));
             app.AppendToConsole("Starting...");
             List<string> files = fsm.GetDirectoryFiles(packageDirectoryTreePath);
             int copiedFilesCounter = 0;
