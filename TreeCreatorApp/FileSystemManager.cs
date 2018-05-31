@@ -68,7 +68,8 @@ namespace TreeCreatorApp
                 return false;
             if (!Directory.Exists(sourceDir))
             {
-                Tree.AppendToConsole(string.Format("Directory {0} does not exist!", sourceDir));
+                errMsg = string.Format("WARN - Directory {0} does not exist! Skipping..", sourceDir);
+                Tree.AppendToConsole(string.Format("WARN - Directory {0} does not exist! Skipping..", sourceDir));
                 return false;
             }
             if (!File.Exists(sourceFileFullPath))

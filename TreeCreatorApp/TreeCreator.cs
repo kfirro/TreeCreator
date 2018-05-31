@@ -27,9 +27,12 @@ namespace TreeCreatorApp
             Simulation = Simulation.Yes;
             AppendToConsole(Validator.Usage(true),true);
 #if DEBUG
-            txtPackageDir.Text = "C:/Temp";
-            txtWorkingDir.Text = "C:/TempProd";
-            txtDestinationDir.Text = "C:/TempRollback";
+            //txtPackageDir.Text = "C:/Temp";
+            txtPackageDir.Text = "C:/Temp/apps/current";
+            //txtWorkingDir.Text = "C:/TempProd";
+            txtWorkingDir.Text = "C:/Temp/apps/package";
+            //txtDestinationDir.Text = "C:/TempRollback";
+            txtDestinationDir.Text = "C:/Temp/apps/package";
 #endif
         }
         public void AppendToConsole(string text,bool IsFirstTime = false)
